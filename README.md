@@ -1,9 +1,20 @@
 # Automating Finance
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Set Up Guide](#set-up-guide)
+  3.1 [Incorta](#incorta)
+  3.2 [Microstrategy](#microstrategy)
+  3.3 [The Other Prerequisites](#the-other-prerequisites)
+    3.3.1 [Python](#python)
+    3.3.2 [Selenium](#selenium)
+    3.3.3 [webdriver_manager](#webdriver_manager)
+4. [Usage](#usage)
 
 ## Introduction
 This is made up of two scripts that automate the process of downloading the required data from Incorta and Microstrategy from their respective scripts. This is intended for Keysight Technologies Employees only.
 
-## Prerequisite
+## Prerequisites
 - Python 3.8 or higher (3.10.10 was used)
 - Google Chrome
 - Selenium 4.8
@@ -25,11 +36,13 @@ To be able for the script to download the files correctly, the following files i
 
 Make sure that before you make the report, that the selected fields for Time, MU Hierarchy and Payment Type are as shown in the image.
 
-### Downloading the Prerequisites
-#### 1. Python
+### The Other Prerequisites
+These have to be downloaded, as they are the language where the instructions are written in, and completed in.
+
+#### Python
 There are multiple ways to download Python but the easiest way for Windows Devices is to download it from the [Microsoft Store](https://www.microsoft.com/store/productId/9NRWMJP3717K) . For macOS devices, the [official website](https://www.python.org/downloads/macos/) is good, just make sure that you download the latest release and follow the installation instructions.
 
-#### 2. Selenium
+#### Selenium
 The latest version of Selenium that was used was 4.8. This is used to automate tasks in browsers like Google Chrome, Firefox, Edge, or Safari.
 
 You can use Pip, which is a package manager that comes with Python. You can copy and paste the below in Windows PowerShell or Terminal for macOS:
@@ -38,7 +51,7 @@ You can use Pip, which is a package manager that comes with Python. You can copy
 
 Once done, press enter, accept any agreements and wait for it to finish downloading.
 
-#### 3. webdriver_manager
+#### webdriver_manager
 This is a library that is used to get the drivers for Selenium so the tasks can be performed.
 
 You can use Pip again, copy and paste the following:
