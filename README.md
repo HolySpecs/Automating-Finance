@@ -14,14 +14,14 @@ This is made up of two scripts that automate the process of downloading the requ
 This does not need to be followed all the way if you are knowledgeable in fulfilling the requirements but is usefull if it is not working on first use.
 
 ### Incorta
-![Image for setting up Incorta](Images\IncortaSetUp.jpg)
+![Image for setting up Incorta](Images/IncortaSetUp.jpg)
 
 To be able for the script to download the files correctly, the following files in Incorta must be favorited:
 1. MARCOM PO REPORT - PR Number Copy
 2. Marcom_invoices
 
 ### Microstrategy
-![Image for setting up Microstrategy](Images\MicrostrategySetUp.jpg)
+![Image for setting up Microstrategy](Images/MicrostrategySetUp.jpg)
 
 Make sure that before you make the report, that the selected fields for Time, MU Hierarchy and Payment Type are as shown in the image.
 
