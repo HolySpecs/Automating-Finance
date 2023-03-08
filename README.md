@@ -1,3 +1,25 @@
+# Automating Finance
+
+## Introduction
+This is made up of two scripts that automate the process of downloading the required data from Incorta and Microstrategy from their respective scripts. This is intended for Keysight Technologies Employees only.
+
+## Requirements
+1. Python 3.8 or higher (3.10.10 was used)
+2. Selenium 4.8
+3. webdriver_manager
+4. A valid Incorta and Microstrategy account
+
+## Set Up Guide
+This does not need to be followed all the way if you are knowledgeable in fulfilling the requirements but is usefull if it is not working on first use.
+
+### Incorta
+To be able for the script to download the files correctly, the following files in Incorta must be favorited:
+1. MARCOM PO REPORT - PR Number Copy
+2. Marcom_invoices
+
+### Microstrategy
+
+
 Steps to follow before running script:
 - Download Python (anything above 3.8 is ok)
 	- Python is the programming language that's used .
