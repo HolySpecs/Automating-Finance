@@ -3,12 +3,12 @@
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
 3. [Set Up Guide](#set-up-guide)
-  3.1 [Incorta](#incorta)
-  3.2 [Microstrategy](#microstrategy)
-  3.3 [The Other Prerequisites](#the-other-prerequisites)
-    3.3.1 [Python](#python)
-    3.3.2 [Selenium](#selenium)
-    3.3.3 [webdriver_manager](#webdriver_manager)
+  3.1. [Incorta](#incorta)
+  3.2. [Microstrategy](#microstrategy)
+  3.3. [The Other Prerequisites](#the-other-prerequisites)
+    3.3.1. [Python](#python)
+    3.3.2. [Selenium](#selenium)
+    3.3.3. [webdriver_manager](#webdriver_manager)
 4. [Usage](#usage)
 
 ## Introduction
