@@ -53,7 +53,7 @@ Run the script for the data that you need with Python, you can do this by right 
 
 You will need to enter the Login details for Incorta in the Python Shell and for Microstrategy, you have 2 minutes to login to your Keysight Account. From there, you can let the script do it's thing.
 
-Notes:
+## Notes:
 - if you do want to paste in the python terminal, do control + shift + v
 - if you press control + c , you will force the script to end
 - make sure you have no other files ending in .crdownload in you download location
