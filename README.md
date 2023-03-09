@@ -63,4 +63,3 @@ You will need to enter the Login details for Incorta in the Python Shell and for
 - if you do want to paste in the python terminal, do control + shift + v
 - if you press control + c , you will force the script to end
 - make sure you have no other files ending in .crdownload in you download location
-- as of right now, microstrategy is not ready for use
