@@ -27,12 +27,6 @@ From there, you should be able to see the files and click the star next to them 
 
 Make sure that before you make the report, that the selected fields for Time, MU Hierarchy and Payment Type are as shown in the image.
 
-### The Other Prerequisites
-These have to be downloaded, as they are the language where the instructions are written in, and completed in.
-
-#### Python
-There are multiple ways to download Python but the easiest way for Windows Devices is to download it from the [Microsoft Store](https://www.microsoft.com/store/productId/9NRWMJP3717K) . For macOS devices, the [official website](https://www.python.org/downloads/macos/) is good, just make sure that you download the latest release and follow the installation instructions.
-
 ## Usage
 Run the executable for the data that you need. EG: incorta.exe for getting data from Incorta
 
