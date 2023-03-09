@@ -19,6 +19,12 @@ To be able for the script to download the files correctly, the following files i
 1. MARCOM PO REPORT - PR Number Copy
 2. Marcom_invoices
 
+To get to them, click on the following folders:
+1. Marketing
+2. Marcom Reports
+
+From there, you should be able to see the files and click the star next to them to favorite them.
+
 ### Microstrategy
 ![Image for setting up Microstrategy](Images/MicrostrategySetUp.jpg)
 
