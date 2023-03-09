@@ -5,6 +5,7 @@ This is made up of two scripts that automate the process of downloading the requ
 ## Prerequisites
 - Google Chrome
 - A valid Incorta and Microstrategy account
+- Being connected to Keysight (Either in the office or via VPN)
 
 ## Set Up Guide
 This does not need to be followed all the way if you are knowledgeable in fulfilling the requirements but is usefull if it is not working on first use.
