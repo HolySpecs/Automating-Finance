@@ -12,12 +12,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 PATH_TO_DOWNLOADS = str(Path.home() / "Downloads")
 DOWNLOAD_REQUEST_DELAY = 5
 
-"""
-tenant = "Keysight"
-username = "nichhenr"
-password = "Hydr0C@rb0n$"
-"""
-
 tenant = input("Enter the Tenant: ") #Keysight
 username = input("Enter your username: ") #nichhenr
 password = getpass.getpass("Enter your password for Incorta: ")
