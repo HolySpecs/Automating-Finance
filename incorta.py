@@ -21,6 +21,7 @@ password = "Hydr0C@rb0n$"
 tenant = input("Enter the Tenant: ") #Keysight
 username = input("Enter your username: ") #nichhenr
 password = getpass.getpass("Enter your password for Incorta: ")
+favorited = (input("Do you have the locations of the files favorited? (y/n)")).upper()
 
 driver = webdriver.Chrome(service = ChromeService(ChromeDriverManager().install()))
 driver.get("https://lincortap.cos.is.keysight.com:8443/incorta/#/login")
@@ -58,6 +59,11 @@ def backToHome(driver):
     clickableLogo.click()
     sleep(1)
 
+def goToLocation(driver):
+    folders = ["//a[text() = 'Marketing'", "//a[text() = 'Marcom Reports'"]
+    for folder in folders:
+        waitForElement(driver, By.XPATH, folder).click()
+
 def downloadCSVReport(driver):
     MoreOptionsHeader= driver.find_element(By.XPATH, "//div[@class = 'draggable-insight-wrapper']")
     MoreOptionsButton = driver.find_element(By.XPATH, "(//button[@class = 'insight__header-menu kebab-icon ant-dropdown-trigger'])[1]")
@@ -74,20 +80,24 @@ def downloadCSVReport(driver):
     #wait until the download is complete
     downloadWait()
 
-def downloadPoReport(driver):
+def downloadPoReport(driver, favorited):
+    if favorited == "N":
+        goToLocation(driver)
     PoReportItem = waitForElement(driver, By.XPATH, "//span[text() = 'MARCOM PO REPORT - PR  Number Copy']")
     PoReportItem.click()
     waitForElement(driver, By.XPATH, "//a[text() = 'Operating Unit Name']")
     downloadCSVReport(driver)
 
-def downloadInvoiceReport(driver):
+def downloadInvoiceReport(driver, favorited):
+    if favorited == "N":
+        goToLocation(driver)
     InvoiceItem = waitForElement(driver, By.XPATH, "//span[text() = 'Marcom_Invoices']")
     InvoiceItem.click()
     waitForElement(driver, By.XPATH, "//a[text() = 'Operating Unit ( Invoice)']")
     downloadCSVReport(driver)
 
 login(driver, tenant, username, password)
-downloadPoReport(driver)
+downloadPoReport(driver, favorited)
 backToHome(driver)
-downloadInvoiceReport(driver)
+downloadInvoiceReport(driver, favorited)
 backToHome(driver)
