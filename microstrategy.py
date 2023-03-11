@@ -9,16 +9,18 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
 PATH_TO_DOWNLOADS = str(Path.home() / "Downloads")
+DOWNLOAD_REQUEST_DELAY = 5
+DELAY_UNTIL_TIMEOUT = 120
 
 service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service = service)
 driver.get("https://bi-prod.is.keysight.com/MicroStrategy/servlet/mstrWeb")
 #wait for the user to enter their details
-WebDriverWait(driver, 120).until(EC.url_to_be("https://bi-prod.is.keysight.com/MicroStrategy/servlet/mstrWeb"))
+WebDriverWait(driver, DELAY_UNTIL_TIMEOUT).until(EC.url_to_be("https://bi-prod.is.keysight.com/MicroStrategy/servlet/mstrWeb"))
 
 #wait for the element to be visible
 def waitForElement(driver, howToLocateElement, element):
-    return WebDriverWait(driver, 30).until(EC.element_to_be_clickable((howToLocateElement, element)))
+    return WebDriverWait(driver, DELAY_UNTIL_TIMEOUT).until(EC.element_to_be_clickable((howToLocateElement, element)))
 
 def executeScript(driver, element):
     driver.execute_script("arguments[0].click();", waitForElement(driver, By.XPATH, element))
@@ -39,17 +41,13 @@ def makeDosierReport(driver):
     for folder in folders:
         executeScript(driver, folder)
 
-makeDosierReport(driver)
-sleep(10)
-"""
-Next step:
-- find out how to download the data
-- note to self, angular is a mess to us selenium on
+def downloadDosierReport(driver):
+    #waitForElement(driver, By.XPATH, "//div[@id = 'mstr136' and @class = 'mstrmojo-VIDocLayoutViewer ']")
+    executeScript(driver, "//div[@class = 'hover-btn hover-menu-btn mouse-left' and @aria-label = 'Context Menu']")
+    executeScript(driver, "//*[text() = 'Export']")
+    executeScript(driver, "//*[text() = 'Data']")
+    sleep(DOWNLOAD_REQUEST_DELAY)
+    downloadWait()
 
-theory:
-- respond when the elements are present
-- locate the more options menu for the concur detail report
-- select export
-- select data
-- wait for download to occur
-"""                              
+makeDosierReport(driver)
+downloadDosierReport(driver)                         
