@@ -54,7 +54,7 @@ def backToHome(driver):
     sleep(1)
 
 def goToLocation(driver):
-    folders = ["//a[text() = 'Marketing'", "//a[text() = 'Marcom Reports'"]
+    folders = ["//*[text() = 'Marketing']", "//*[text() = 'Marcom Reports']"]
     for folder in folders:
         waitForElement(driver, By.XPATH, folder).click()
 

@@ -10,7 +10,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 PATH_TO_DOWNLOADS = str(Path.home() / "Downloads")
 DOWNLOAD_REQUEST_DELAY = 5
-DELAY_UNTIL_TIMEOUT = 120
+DELAY_UNTIL_TIMEOUT = 180
 
 service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service = service)
