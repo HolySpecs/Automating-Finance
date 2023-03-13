@@ -1,6 +1,6 @@
 # Automating Finance
 ## Introduction
-This is made up of two scripts that automate the process of downloading the required data from Incorta and Microstrategy from their respective scripts. This is intended for Keysight Technologies Employees only.
+This is made up of two scripts that automate the process of downloading the required data from Incorta and Microstrategy from their respective scripts. This is intended for Keysight Technologies Employees only. It is recommended that before using this that you have an understanding on how to download the files without the script.
 
 ## Prerequisites
 - Google Chrome
