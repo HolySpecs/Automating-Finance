@@ -10,18 +10,20 @@ This is made up of two scripts that automate the process of downloading the requ
 ## Set Up Guide
 This does not need to be followed all the way if you are knowledgeable in fulfilling the requirements but is usefull if it is not working on first use.
 
-### Incorta
+### Incorta (Preferable but not necessary)
 ![Image for setting up Incorta](Images/IncortaSetUp.jpg)
 
-To be able for the script to download the files correctly, the following files in Incorta must be favorited:
+To be able for the script to download the files correctly, the following files in Incorta must be in Incorta:
 1. MARCOM PO REPORT - PR Number Copy
 2. Marcom_invoices
 
-To get to them, click on the following folders:
+If you do not have these favorited in Incorta, you can navigate to them via:
 1. Marketing
 2. Marcom Reports
 
-From there, you should be able to see the files and click the star next to them to favorite them.
+But it is not necessary, as there is an option so the script will do it for you.
+
+If you do decide to favorite them after navigating to them, click the star next to them to favorite them.
 
 ### Microstrategy
 ![Image for setting up Microstrategy](Images/MicrostrategySetUp.jpg)
